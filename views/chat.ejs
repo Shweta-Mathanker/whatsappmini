@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Mini</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/dLvS60QyTow-fN6psEDnMpqzpUJPIASLj5TVUC2GIms/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvd2hhdHNhcHAv/c21hbGwvd2hhdHNh/cHBfUE5HOTUxODEu/cG5n" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/chat.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="whatsappmini">
+        <h1>WhatsApp_mini</h1>
+    </div>
+<div id="main">
+    <div id="left">
+        <div id="nav">
+            <div id="profile">
+                <img src="<%= defaultProfilePicture %>" alt="Default Profile Picture">
+              <h1><%=  username%></h1>
+            </div>
+            <div id="links">
+                <i class="ri-donut-chart-line"></i>
+                <i class="ri-message-fill"></i>
+                <i class="ri-more-2-line"></i>
+            </div>
+        </div>
+    <div id="searchbar">
+        <form >
+            <input type="text" placeholder="search">
+        </form>
+    </div>
+        <div class="chatblock">
+       <h1>
+       <img src="<%=defaultProfilePicture%>" alt="">
+       <%= username%>
+    </h1>
+        </div>
+    </div>
+   <div id="right">
+   <div id="mainblock">
+    <div id="usernameblock">
+        <div id="partone">
+            <img src="<%=defaultProfilePicture%>" alt="">
+        <h1>username</h1>
+        </div>
+<div id="parttwo">
+    <i class="ri-search-line"></i>
+    <i class="ri-attachment-2"></i>
+    <i class="ri-more-fill"></i>
+</div>
+    </div>
+    <div id="chatswrite">
+        <i class="ri-emotion-happy-line"></i>
+        <form action="">
+            <input type="text" placeholder="Write Message">
+        </form>
+        <button type="onsubmit">Send</button>
+   </div>
+   </div>
+   </div> 
+</div>
+
+    <script>
+    document.querySelector('.chatblock').addEventListener('click',function(){
+    document.querySelector('#mainblock').style.display='initial';
+    })
+    </script>
+
+</body>
+</html>
