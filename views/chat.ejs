@@ -28,11 +28,11 @@
                 <i class="ri-more-2-line"></i>
             </div>
         </div>
-    <div id="searchbar">
+    <button id="searchbar" onclick="openSearch()">
         <form >
             <input type="text" placeholder="search">
         </form>
-    </div>
+    </button>
         <div class="chatblock">
        <h1>
        <img src="<%=defaultProfilePicture%>" alt="">
@@ -62,12 +62,23 @@
    </div>
    </div>
    </div> 
+   <div class="searchSection">
+<div class="center">
+    <input id="searchUserInput" type="text" placeholder="Search username">
+    <div class="users">
+    </div>
+</div>
+   </div>
 </div>
 
     <script>
     document.querySelector('.chatblock').addEventListener('click',function(){
     document.querySelector('#mainblock').style.display='initial';
     })
+    
+    function openSearch() {
+      document.querySelector('.searchSection').style.display = "flex"
+    }
     </script>
 
 </body>
